@@ -234,7 +234,7 @@
   $(document).on('click','.send', function(){
     /* Inputan Formulir */
     var input_name          = $("#name").val(),
-        input_email         = $("#email").val(),
+        // input_email         = $("#email").val(),
         input_phone         = $("#phone").val(),
         // input_product       = $("#product").val(),
         input_description   = $("#description").val();
@@ -242,7 +242,7 @@
     /* Pengaturan Whatsapp */
     var walink      = 'https://api.whatsapp.com/send',
         phone       = '6287774552784',
-        text        = 'Halo saya ingin memesan ',
+        text        = 'Halo saya ingin memesan Madu',
         text_yes    = 'Pesanan Anda berhasil terkirim.',
         text_no     = 'Isilah formulir terlebih dahulu.';
  
@@ -255,7 +255,7 @@
         /* Whatsapp URL */
         var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A%0A' +
             '*Nama* : ' + input_name + '%0A' +
-            '*Alamat Email* : ' + input_email + '%0A' +
+            // '*Alamat Email* : ' + input_email + '%0A' +
             '*Nomor Kontak / Whatsapp* : ' + input_phone + '%0A' +
             // '*Produk* : ' + input_product + '%0A' +
             '*Catatan* : ' + input_description + '%0A';
