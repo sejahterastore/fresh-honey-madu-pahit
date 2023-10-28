@@ -63,6 +63,9 @@ src="https://www.facebook.com/tr?id=253200694199897&ev=PageView
 </head>
 
 <body>
+<div class="notification" id="notification">
+        <p>🛍️ New order: <span id="orderDetails"></span></p>
+    </div>
 
     <!-- <br>
     <center><a class="btn btn-primary" href="#carapesan"><i widht:200 hight:200 class="responsive"> Beli Sekarang</i></a></center>
@@ -75,29 +78,67 @@ src="https://www.facebook.com/tr?id=253200694199897&ev=PageView
     <center>
         <a href="#!"><img src="assets/img/panah1.gif" width="100" height="100" /></a>
     </center>
-    <center>
+    <!-- <center>
         <a id="carapesan" href="https://wa.me/6287774552784?text=Halo,+Saya+mau+order++dan+ambil+promo+madu+al+mubarokah..."><img src="assets/img/wa.png" class="responsive" /></a>
-    </center>
-    <center> Support By:
-        <a href="#!"><img src="assets/img/ekspedisi.png" class="responsive" /></a>
-    </center>
-    <button id="scrollToTopButton">↑ Kembali ke Atas</button>
+    </center> -->
 
+    <div class="col-lg-6 col-lg-offset-3">
+            <h4>Cara Pemesanan Produk</h4>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Silahkan di isi form di bawah ini..
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label>Pilih Metode Pembayaran<a class="a">*</a></label>
+                        <select name="pembayaran" class="form-control" id="pembayaran">
+                            <option value="">-- Pilih Metode Pembayaran --</option>
+                            <option value="Transfer Bank">Transfer Bank</option>
+                            <option value="COD(Bayar di Tempat)">COD(Bayar di Tempat)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Pilih Madu<a class="a">*</a></label>
+                        <select name="madu" class="form-control" id="madu">
+                            <option value="">-- Pilih Madu --</option>
+                            <option value="Madu Manis">Madu Manis</option>
+                            <option value="Madu Hitam Pahit">Madu Hitam Pahit</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Nama Lengkap <a class="a">*</a></label>
+                        <input type="text" name="name" class="form-control" placeholder="Tulis nama Anda" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label>No. WhatsApp<a class="a">*</a></label>
+                        <input type="text" name="phone" class="form-control" placeholder="Tulis nomor HP aktif Anda: contoh 087774552784" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Alamat lengkap (Harap sertakan rt/rw/no.rumah/kecamatan)<a class="a">*</a></label>
+                        <textarea name="description" class="form-control" rows="3" placeholder="Tulis alamat lengkap untuk pengiriman, (Kecamatan, Kota/Kabupaten, Provinsi, dan Kode Pos bila ada)" id="description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success send">Beli Sekarang</button>
+                    </div>
+
+                    <div id="text-info"></div>
+                </div>
+            </div>
+        </div>
+    </br>
+    <center> 
+        <a href="#"><img src="assets/img/ekspedisi.png" class="responsive" /></a>
+    </center>
+    <button id="scrollUp">↑</button>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2023 Sejahtera Store. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/notifm.js"></script>
     </body>
     
-
+    
 </html>
-<script>
-// Mendapatkan tombol kembali ke atas
-var scrollToTopButton = document.getElementById("scrollToTopButton");
-
-// Menambahkan event listener untuk menggulir kembali ke atas saat tombol diklik
-scrollToTopButton.addEventListener("click", function() {
-  // Menggulir kembali ke atas halaman dengan efek smooth
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
-
-</script>
